@@ -1,0 +1,243 @@
+2020-06-13 20:27:09.897  INFO [bezahlung-service,,,] 22712 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9500
+2020-06-13 20:27:11.235  INFO [bezahlung-service,,,] 22712 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=bezahlung-service, profiles=[default], label=null, version=f9416e1035c6be368fba1e35587cc3a628c83e25, state=null
+2020-06-13 20:27:11.237  INFO [bezahlung-service,,,] 22712 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/kirishanthchethurajah/cloud-config-server//application.yml'}]
+2020-06-13 20:27:11.267  INFO [bezahlung-service,,,] 22712 --- [main] c.k.m.b.BezahlungServiceApplication      : No active profile set, falling back to default profiles: default
+2020-06-13 20:27:12.093  INFO [bezahlung-service,,,] 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-13 20:27:12.194  INFO [bezahlung-service,,,] 22712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 1 JPA repository interfaces.
+2020-06-13 20:27:12.536  INFO [bezahlung-service,,,] 22712 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=733e49e3-6c0e-3936-bbaf-f5a850964cd2
+2020-06-13 20:27:13.153  INFO [bezahlung-service,,,] 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-06-13 20:27:13.162  INFO [bezahlung-service,,,] 22712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-13 20:27:13.163  INFO [bezahlung-service,,,] 22712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-13 20:27:13.363  INFO [bezahlung-service,,,] 22712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-13 20:27:13.364  INFO [bezahlung-service,,,] 22712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
+2020-06-13 20:27:13.429  INFO [bezahlung-service,,,] 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-13 20:27:13.545  INFO [bezahlung-service,,,] 22712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-13 20:27:13.552  INFO [bezahlung-service,,,] 22712 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cc739617-0739-4adf-81b7-5a128e4f1fe2'
+2020-06-13 20:27:14.084  INFO [bezahlung-service,,,] 22712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 20:27:14.162  INFO [bezahlung-service,,,] 22712 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-13 20:27:14.199  WARN [bezahlung-service,,,] 22712 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:27:14.199  INFO [bezahlung-service,,,] 22712 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:27:14.204  WARN [bezahlung-service,,,] 22712 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:27:14.204  INFO [bezahlung-service,,,] 22712 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:27:14.216  INFO [bezahlung-service,,,] 22712 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-13 20:27:14.324  WARN [bezahlung-service,,,] 22712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-13 20:27:14.344  INFO [bezahlung-service,,,] 22712 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-13 20:27:14.473  INFO [bezahlung-service,,,] 22712 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-13 20:27:15.154  INFO [bezahlung-service,,,] 22712 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-13 20:27:15.163  INFO [bezahlung-service,,,] 22712 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 20:27:16.583  WARN [bezahlung-service,,,] 22712 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-13 20:27:17.575  INFO [bezahlung-service,,,] 22712 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-13 20:27:17.621  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-13 20:27:17.799  INFO [bezahlung-service,,,] 22712 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-13 20:27:17.799  INFO [bezahlung-service,,,] 22712 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-13 20:27:17.917  INFO [bezahlung-service,,,] 22712 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-13 20:27:17.917  INFO [bezahlung-service,,,] 22712 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-13 20:27:18.114  INFO [bezahlung-service,,,] 22712 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-13 20:27:18.647  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-13 20:27:18.647  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-13 20:27:18.647  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-13 20:27:18.648  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-13 20:27:18.648  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-13 20:27:18.649  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-13 20:27:18.649  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-13 20:27:18.834  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-13 20:27:18.839  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-13 20:27:18.842  INFO [bezahlung-service,,,] 22712 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-13 20:27:18.846  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592072838846 with initial instances count: 4
+2020-06-13 20:27:18.859  INFO [bezahlung-service,,,] 22712 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BEZAHLUNG-SERVICE with eureka with status UP
+2020-06-13 20:27:18.860  INFO [bezahlung-service,,,] 22712 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592072838860, current=UP, previous=STARTING]
+2020-06-13 20:27:18.863  INFO [bezahlung-service,,,] 22712 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:27:18.900  INFO [bezahlung-service,,,] 22712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-06-13 20:27:18.901  INFO [bezahlung-service,,,] 22712 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-06-13 20:27:18.912  INFO [bezahlung-service,,,] 22712 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:27:19.841  INFO [bezahlung-service,,,] 22712 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-13 20:27:20.167  INFO [bezahlung-service,,,] 22712 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-13 20:27:20.186  INFO [bezahlung-service,,,] 22712 --- [main] c.k.m.b.BezahlungServiceApplication      : Started BezahlungServiceApplication in 12.701 seconds (JVM running for 14.393)
+2020-06-13 20:28:56.978  INFO [bezahlung-service,,,] 22712 --- [http-nio-8000-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-13 20:28:56.978  INFO [bezahlung-service,,,] 22712 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-13 20:28:56.996  INFO [bezahlung-service,,,] 22712 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-06-13 20:28:57.076  INFO [bezahlung-service,9d3014d961cc173c,dc7f165adce7254e,true] 22712 --- [http-nio-8000-exec-3] c.k.m.b.service.BezahlungService         : BezahlungService request: {"bezahlungId":null,"bezahlungStatus":"scheitern","transaktionId":"a39be28f-0a91-4b4f-b2cb-e90ead261fdc","bestellungId":1052,"preis":1370.0}
+2020-06-13 20:32:18.652  INFO [bezahlung-service,,,] 22712 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-13 20:32:29.322  INFO [bezahlung-service,,,] 24284 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9500
+2020-06-13 20:32:30.985  INFO [bezahlung-service,,,] 24284 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=bezahlung-service, profiles=[default], label=null, version=f9416e1035c6be368fba1e35587cc3a628c83e25, state=null
+2020-06-13 20:32:30.987  INFO [bezahlung-service,,,] 24284 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/kirishanthchethurajah/cloud-config-server//application.yml'}]
+2020-06-13 20:32:31.040  INFO [bezahlung-service,,,] 24284 --- [main] c.k.m.b.BezahlungServiceApplicationTests : No active profile set, falling back to default profiles: default
+2020-06-13 20:32:31.983  INFO [bezahlung-service,,,] 24284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-13 20:32:32.241  INFO [bezahlung-service,,,] 24284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247ms. Found 1 JPA repository interfaces.
+2020-06-13 20:32:32.741  INFO [bezahlung-service,,,] 24284 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=11cdcab7-c543-3910-bd21-697625198748
+2020-06-13 20:32:34.241  INFO [bezahlung-service,,,] 24284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 20:32:34.311  INFO [bezahlung-service,,,] 24284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-13 20:32:34.607  INFO [bezahlung-service,,,] 24284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-13 20:32:34.722  INFO [bezahlung-service,,,] 24284 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-13 20:32:34.862  INFO [bezahlung-service,,,] 24284 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-13 20:32:35.135  INFO [bezahlung-service,,,] 24284 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-13 20:32:35.198  WARN [bezahlung-service,,,] 24284 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:32:35.198  INFO [bezahlung-service,,,] 24284 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:32:35.208  WARN [bezahlung-service,,,] 24284 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:32:35.208  INFO [bezahlung-service,,,] 24284 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:32:35.397  INFO [bezahlung-service,,,] 24284 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-13 20:32:35.461  WARN [bezahlung-service,,,] 24284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-13 20:32:36.564  INFO [bezahlung-service,,,] 24284 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-13 20:32:36.580  INFO [bezahlung-service,,,] 24284 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 20:32:36.899  INFO [bezahlung-service,,,] 24284 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fdb6be5e-e74e-4af6-8f74-3baefe312cb8'
+2020-06-13 20:32:38.781  WARN [bezahlung-service,,,] 24284 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-13 20:32:40.313  INFO [bezahlung-service,,,] 24284 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-13 20:32:40.436  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-13 20:32:40.710  INFO [bezahlung-service,,,] 24284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-13 20:32:40.711  INFO [bezahlung-service,,,] 24284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-13 20:32:40.969  INFO [bezahlung-service,,,] 24284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-13 20:32:40.970  INFO [bezahlung-service,,,] 24284 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-13 20:32:41.224  INFO [bezahlung-service,,,] 24284 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-13 20:32:41.665  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-13 20:32:41.666  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-13 20:32:41.666  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-13 20:32:41.666  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-13 20:32:41.666  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-13 20:32:41.666  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-13 20:32:41.667  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-13 20:32:41.837  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-13 20:32:41.844  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-13 20:32:41.847  INFO [bezahlung-service,,,] 24284 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-13 20:32:41.852  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592073161851 with initial instances count: 3
+2020-06-13 20:32:41.865  INFO [bezahlung-service,,,] 24284 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BEZAHLUNG-SERVICE with eureka with status UP
+2020-06-13 20:32:41.865  INFO [bezahlung-service,,,] 24284 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592073161865, current=UP, previous=STARTING]
+2020-06-13 20:32:41.869  INFO [bezahlung-service,,,] 24284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:32:41.872  INFO [bezahlung-service,,,] 24284 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories�
+2020-06-13 20:32:41.915  INFO [bezahlung-service,,,] 24284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:32:42.434  INFO [bezahlung-service,,,] 24284 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-13 20:32:42.455  INFO [bezahlung-service,,,] 24284 --- [main] c.k.m.b.BezahlungServiceApplicationTests : Started BezahlungServiceApplicationTests in 15.449 seconds (JVM running for 16.952)
+2020-06-13 20:32:42.675  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BEZAHLUNG-SERVICE with eureka with status DOWN
+2020-06-13 20:32:42.676  WARN [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592073162676, current=DOWN, previous=UP]
+2020-06-13 20:32:42.676  INFO [bezahlung-service,,,] 24284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:32:42.682  INFO [bezahlung-service,,,] 24284 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:32:43.684  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 20:32:43.685  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-06-13 20:32:43.694  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 20:32:43.695  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-13 20:32:43.702  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-13 20:32:43.703  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-06-13 20:32:46.705  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-06-13 20:32:46.710  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - deregister  status: 200
+2020-06-13 20:32:46.725  INFO [bezahlung-service,,,] 24284 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-06-13 20:32:48.894  INFO [bezahlung-service,,,] 22712 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - Re-registering apps/BEZAHLUNG-SERVICE
+2020-06-13 20:32:48.895  INFO [bezahlung-service,,,] 22712 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:32:48.900  INFO [bezahlung-service,,,] 22712 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:33:08.422  INFO [bezahlung-service,,,] 25860 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9500
+2020-06-13 20:33:09.862  INFO [bezahlung-service,,,] 25860 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=bezahlung-service, profiles=[default], label=null, version=f9416e1035c6be368fba1e35587cc3a628c83e25, state=null
+2020-06-13 20:33:09.863  INFO [bezahlung-service,,,] 25860 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/kirishanthchethurajah/cloud-config-server//application.yml'}]
+2020-06-13 20:33:09.916  INFO [bezahlung-service,,,] 25860 --- [main] c.k.m.b.BezahlungServiceApplication      : No active profile set, falling back to default profiles: default
+2020-06-13 20:33:10.918  INFO [bezahlung-service,,,] 25860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-13 20:33:11.027  INFO [bezahlung-service,,,] 25860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 1 JPA repository interfaces.
+2020-06-13 20:33:11.487  INFO [bezahlung-service,,,] 25860 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=733e49e3-6c0e-3936-bbaf-f5a850964cd2
+2020-06-13 20:33:12.364  INFO [bezahlung-service,,,] 25860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-06-13 20:33:12.372  INFO [bezahlung-service,,,] 25860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-13 20:33:12.373  INFO [bezahlung-service,,,] 25860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-13 20:33:12.585  INFO [bezahlung-service,,,] 25860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-13 20:33:12.586  INFO [bezahlung-service,,,] 25860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2648 ms
+2020-06-13 20:33:12.666  INFO [bezahlung-service,,,] 25860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-13 20:33:12.783  INFO [bezahlung-service,,,] 25860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-13 20:33:12.790  INFO [bezahlung-service,,,] 25860 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:410de4ec-12cc-4111-b878-73f885530626'
+2020-06-13 20:33:13.334  INFO [bezahlung-service,,,] 25860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 20:33:13.405  INFO [bezahlung-service,,,] 25860 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-13 20:33:13.438  WARN [bezahlung-service,,,] 25860 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:33:13.438  INFO [bezahlung-service,,,] 25860 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:33:13.443  WARN [bezahlung-service,,,] 25860 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:33:13.443  INFO [bezahlung-service,,,] 25860 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:33:13.460  INFO [bezahlung-service,,,] 25860 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-13 20:33:13.559  WARN [bezahlung-service,,,] 25860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-13 20:33:13.581  INFO [bezahlung-service,,,] 25860 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-13 20:33:13.700  INFO [bezahlung-service,,,] 25860 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-13 20:33:14.345  INFO [bezahlung-service,,,] 25860 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-13 20:33:14.352  INFO [bezahlung-service,,,] 25860 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 20:33:15.693  WARN [bezahlung-service,,,] 25860 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-13 20:33:16.639  INFO [bezahlung-service,,,] 25860 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-13 20:33:16.674  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-13 20:33:16.844  INFO [bezahlung-service,,,] 25860 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-13 20:33:16.844  INFO [bezahlung-service,,,] 25860 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-13 20:33:16.969  INFO [bezahlung-service,,,] 25860 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-13 20:33:16.969  INFO [bezahlung-service,,,] 25860 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-13 20:33:17.142  INFO [bezahlung-service,,,] 25860 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-13 20:33:17.606  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-13 20:33:17.606  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-13 20:33:17.606  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-13 20:33:17.606  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-13 20:33:17.607  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-13 20:33:17.607  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-13 20:33:17.607  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-13 20:33:17.721  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-13 20:33:17.724  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-13 20:33:17.726  INFO [bezahlung-service,,,] 25860 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-13 20:33:17.731  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592073197730 with initial instances count: 3
+2020-06-13 20:33:17.740  INFO [bezahlung-service,,,] 25860 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BEZAHLUNG-SERVICE with eureka with status UP
+2020-06-13 20:33:17.740  INFO [bezahlung-service,,,] 25860 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592073197740, current=UP, previous=STARTING]
+2020-06-13 20:33:17.742  INFO [bezahlung-service,,,] 25860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:33:17.767  INFO [bezahlung-service,,,] 25860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-06-13 20:33:17.768  INFO [bezahlung-service,,,] 25860 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-06-13 20:33:17.777  INFO [bezahlung-service,,,] 25860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:33:18.461  INFO [bezahlung-service,,,] 25860 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-13 20:33:18.830  INFO [bezahlung-service,,,] 25860 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-13 20:33:18.846  INFO [bezahlung-service,,,] 25860 --- [main] c.k.m.b.BezahlungServiceApplication      : Started BezahlungServiceApplication in 13.198 seconds (JVM running for 14.765)
+2020-06-13 20:34:24.541  INFO [bezahlung-service,,,] 25860 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-13 20:34:24.542  INFO [bezahlung-service,,,] 25860 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-13 20:34:24.561  INFO [bezahlung-service,,,] 25860 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-06-13 20:34:24.634  INFO [bezahlung-service,1fbbc925737b1eba,85b369e1581005aa,true] 25860 --- [http-nio-8000-exec-1] c.k.m.b.service.BezahlungService         : BezahlungService request: {"bezahlungId":null,"bezahlungStatus":"erfolg","transaktionId":"cc3bc6d4-e19d-44f9-8564-102c11a36e96","bestellungId":12,"preis":170.0}
+2020-06-13 20:38:11.895  INFO [bezahlung-service,,,] 15824 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9500
+2020-06-13 20:38:13.150  INFO [bezahlung-service,,,] 15824 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=bezahlung-service, profiles=[default], label=null, version=f9416e1035c6be368fba1e35587cc3a628c83e25, state=null
+2020-06-13 20:38:13.151  INFO [bezahlung-service,,,] 15824 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/kirishanthchethurajah/cloud-config-server//application.yml'}]
+2020-06-13 20:38:13.179  INFO [bezahlung-service,,,] 15824 --- [main] c.k.m.b.BezahlungServiceApplication      : No active profile set, falling back to default profiles: default
+2020-06-13 20:38:13.929  INFO [bezahlung-service,,,] 15824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-13 20:38:14.024  INFO [bezahlung-service,,,] 15824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 1 JPA repository interfaces.
+2020-06-13 20:38:14.354  INFO [bezahlung-service,,,] 15824 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=342d3316-43f3-3f42-b95c-2d6b0a7fd524
+2020-06-13 20:38:14.937  INFO [bezahlung-service,,,] 15824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-06-13 20:38:14.944  INFO [bezahlung-service,,,] 15824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-13 20:38:14.945  INFO [bezahlung-service,,,] 15824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-13 20:38:15.137  INFO [bezahlung-service,,,] 15824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-13 20:38:15.137  INFO [bezahlung-service,,,] 15824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1945 ms
+2020-06-13 20:38:15.211  INFO [bezahlung-service,,,] 15824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-13 20:38:15.326  INFO [bezahlung-service,,,] 15824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-13 20:38:15.332  INFO [bezahlung-service,,,] 15824 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1dcc2ad5-eefa-4401-91c3-224e0fc45c5f'
+2020-06-13 20:38:15.807  INFO [bezahlung-service,,,] 15824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 20:38:15.890  INFO [bezahlung-service,,,] 15824 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-13 20:38:15.916  WARN [bezahlung-service,,,] 15824 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:38:15.917  INFO [bezahlung-service,,,] 15824 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:38:15.922  WARN [bezahlung-service,,,] 15824 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-13 20:38:15.923  INFO [bezahlung-service,,,] 15824 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-13 20:38:15.941  INFO [bezahlung-service,,,] 15824 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-13 20:38:16.043  WARN [bezahlung-service,,,] 15824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-13 20:38:16.071  INFO [bezahlung-service,,,] 15824 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-13 20:38:16.201  INFO [bezahlung-service,,,] 15824 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-13 20:38:16.843  INFO [bezahlung-service,,,] 15824 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-13 20:38:16.850  INFO [bezahlung-service,,,] 15824 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 20:38:18.170  WARN [bezahlung-service,,,] 15824 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-13 20:38:19.142  INFO [bezahlung-service,,,] 15824 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-13 20:38:19.179  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-13 20:38:19.369  INFO [bezahlung-service,,,] 15824 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-13 20:38:19.369  INFO [bezahlung-service,,,] 15824 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-13 20:38:19.482  INFO [bezahlung-service,,,] 15824 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-13 20:38:19.482  INFO [bezahlung-service,,,] 15824 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-13 20:38:19.643  INFO [bezahlung-service,,,] 15824 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-13 20:38:20.095  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-13 20:38:20.095  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-13 20:38:20.096  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-13 20:38:20.096  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-13 20:38:20.096  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-13 20:38:20.096  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-13 20:38:20.096  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-13 20:38:20.203  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-13 20:38:20.206  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-13 20:38:20.208  INFO [bezahlung-service,,,] 15824 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-13 20:38:20.212  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592073500211 with initial instances count: 4
+2020-06-13 20:38:20.220  INFO [bezahlung-service,,,] 15824 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BEZAHLUNG-SERVICE with eureka with status UP
+2020-06-13 20:38:20.220  INFO [bezahlung-service,,,] 15824 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592073500220, current=UP, previous=STARTING]
+2020-06-13 20:38:20.223  INFO [bezahlung-service,,,] 15824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000: registering service...
+2020-06-13 20:38:20.249  INFO [bezahlung-service,,,] 15824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-06-13 20:38:20.249  INFO [bezahlung-service,,,] 15824 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-06-13 20:38:20.261  INFO [bezahlung-service,,,] 15824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BEZAHLUNG-SERVICE/host.docker.internal:bezahlung-service:8000 - registration status: 204
+2020-06-13 20:38:20.875  INFO [bezahlung-service,,,] 15824 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-13 20:38:21.160  INFO [bezahlung-service,,,] 15824 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-13 20:38:21.172  INFO [bezahlung-service,,,] 15824 --- [main] c.k.m.b.BezahlungServiceApplication      : Started BezahlungServiceApplication in 11.5 seconds (JVM running for 13.025)
+2020-06-13 20:38:44.296  INFO [bezahlung-service,,,] 15824 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-13 20:38:44.296  INFO [bezahlung-service,,,] 15824 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-13 20:38:44.314  INFO [bezahlung-service,,,] 15824 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-06-13 20:38:44.389  INFO [bezahlung-service,a04b1008624db7b9,2861878c78102c96,true] 15824 --- [http-nio-8000-exec-1] c.k.m.b.service.BezahlungService         : BezahlungService request: {"bezahlungId":null,"bezahlungStatus":"scheitern","transaktionId":"d368f114-4d0f-4b74-8d92-ec8fc8474efd","bestellungId":13,"preis":1670.0}
+2020-06-13 20:43:20.098  INFO [bezahlung-service,,,] 15824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

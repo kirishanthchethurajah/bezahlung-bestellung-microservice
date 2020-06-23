@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kirishanthchethurajah/cloud-config-server/
+
+server:
+  port: 9500
+

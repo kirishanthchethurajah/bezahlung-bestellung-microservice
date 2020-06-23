@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: api-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: bestellung-service
+          uri: lb://bestellung-service
+          predicates:
+            - Path=/bestellung/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: bestellung-service
+                fallbackuri: forward:/bestellungRuckfall
+        - id: bezahlung-service
+          uri: lb://bezahlung-service
+          predicates:
+            - Path=/bezahlung/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: bezahlung-service
+                fallbackuri: forward:/bezahlungRuckfall
+
+
+
+server:
+  port: 9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
